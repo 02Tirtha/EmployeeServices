@@ -1,0 +1,61 @@
+/* AddEmployee.css */
+
+/* Container Slide-up & Fade-in Animation */
+@keyframes slideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to whole AddEmployee container */
+  .add-employee-container {
+    animation: slideUpFade 1s ease-out both;
+    opacity: 0;  /* Ensure it starts as invisible */
+  }
+  
+  /* Optionally, add a box shadow for some depth */
+  .add-employee-container {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fields with a delay animation */
+  .add-employee-container input,
+  .add-employee-container button {
+    opacity: 0;
+    animation: fadeInFromLeft 0.6s ease-out forwards;
+  }
+  
+  /* Apply delay to each input field */
+  .add-employee-container input:nth-of-type(1) { animation-delay: 0.5s; }
+  .add-employee-container input:nth-of-type(2) { animation-delay: 0.7s; }
+  .add-employee-container input:nth-of-type(3) { animation-delay: 0.9s; }
+  .add-employee-container input:nth-of-type(4) { animation-delay: 1.1s; }
+  
+  /* Apply delay to each button */
+  .add-employee-container button:nth-of-type(1) { animation-delay: 1.3s; }
+  .add-employee-container button:nth-of-type(2) { animation-delay: 1.5s; }
+  .add-employee-container button:nth-of-type(3) { animation-delay: 1.7s; }
+  
+  /* Input field fade-in from the left */
+  @keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Optional: Save button hover effect */
+  .add-employee-container button.bg-green-400:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+  

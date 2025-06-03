@@ -1,0 +1,157 @@
+/* LoginForm.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* 1) Make this a positioning context */
+.login-container {
+    position: relative;
+    min-height: calc(100vh - 60px);  /* subtract navbar height if ~60px */
+}
+
+/* 2) Absolutely position the form mid‐height & at ~15% from left */
+.login-form {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    /* transform: translateY(-50%); */
+    background: rgba(255,255,255,0.02);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5); /* Enhanced box-shadow */
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    /* animation: fadeInLeft 0.8s ease-out; Add animation for form entry */
+}
+
+/* Rest of your styling… */
+.login-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+    animation: slideInFromTop 0.9s ease-out both; 
+    /* Apply slideInFromTop animation */
+
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.8);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f46e5;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form button:hover {
+    background-color: #372ca9;
+}
+
+/* Optional responsive tweak: push further left on very wide screens */
+@media (min-width: 1600px) {
+    .login-form {
+        left: 10%;
+    }
+}
+
+/* Animation: Fade in from the left with scale */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.9); /* Start from left with a slight scale */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1); /* End at normal position and scale */
+    }
+}
+/* Add at the bottom of LoginForm.css */
+
+/* 1) Define the field animation */
+@keyframes fadeInField {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* 2) Apply initial hidden state + animation to inputs and button */
+  .login-form input,
+  .login-form button {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInField 0.6s ease-out forwards;
+  }
+  
+  /* 3) Stagger the delays for each field */
+  .login-form input:nth-of-type(1) {
+    animation-delay: 0.4s;
+  }
+  .login-form input:nth-of-type(2) {
+    animation-delay: 0.6s;
+  }
+  .login-form input:nth-of-type(3) {
+    animation-delay: 0.8s;
+  }
+  /* If you have a 4th field (e.g. password), add nth-of-type(4) */
+  .login-form input:nth-of-type(4) {
+    animation-delay: 1s;
+  }
+  
+  /* Button comes last */
+  .login-form button {
+    animation-delay: 1.2s;
+  }
+  
+/* 1) Down-to-Up animation for the form container */
+@keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px); /* Start above the screen */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at the normal position */
+    }
+  }
+  
+  .login-form {
+    animation: slideDown 0.8s ease-out both; /* Apply slideDown animation */
+  }
+  
+  /* 2) Slight “pop” on the Login button hover */
+  .login-form button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .login-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  

@@ -1,0 +1,28 @@
+/* EmployeeList.css */
+
+/* 1) Define a simple slide‐up + fade‐in animation */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 2) Apply it to the whole container */
+  .employee-list-container {
+    opacity: 0; /* start invisible */
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* 3) Optional: add a subtle box-shadow for depth */
+  .employee-list-container {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    
+  }
+  
