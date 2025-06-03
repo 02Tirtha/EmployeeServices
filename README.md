@@ -11,15 +11,16 @@ Employee Services is a Java Full-Stack Project built using Spring Boot, MySQL, R
 -  Backend Tech Stack – Powered by Java Spring Boot and connects to MySQL.
 
 # Tech Stack 
-  Technology  | Description 
-  --------------------------------------------------
-  Java        | Backend programming language 
-  Spring Boot | Framework for API and backend logic 
-  MySQL       | Database management system 
-  React       | Frontend framework for UI components 
-  JavaScript  | Dynamic UI functionality 
-  CSS         | Styling for frontend design 
-  Postman     | API testing tool  
+
+| Technology  | Description                          |
+|------------|--------------------------------------|
+| **Java**   | Backend programming language        |
+| **Spring Boot** | Framework for API and backend logic |
+| **MySQL**  | Database management system         |
+| **React**  | Frontend framework for UI components |
+| **JavaScript** | Dynamic UI functionality       |
+| **CSS**    | Styling for frontend design        |
+| **Postman** | API testing tool                   |
 
 # Setup & Installation
 -> Backend (Spring Boot & MySQL)
@@ -50,9 +51,9 @@ Employee Services is a Java Full-Stack Project built using Spring Boot, MySQL, R
 - DELETE /employees/{id} – Remove an employee.
 
 # Future Improvements 
-- 🔄 Add JWT-based authentication for secure access.
-- 📊 Improve UI with a dashboard and employee analytics.
-- 🌐 Deploy the project using Docker or cloud platforms.
+- Add JWT-based authentication for secure access.
+- Improve UI with a dashboard and employee analytics.
+- Deploy the project using Docker or cloud platforms.
   
 # Contributing 
 - Fork the repository and create a new branch.
