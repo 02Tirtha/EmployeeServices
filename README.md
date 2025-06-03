@@ -29,14 +29,25 @@ Employee Services is a Java Full-Stack Project built using Spring Boot, MySQL, R
    ```sh
    git clone https://github.com/yourusername/employee-services.git
    cd employee-services
+ 2. **Start MySQL and create a database:**
+    ```sql
+    CREATE DATABASE employee_db;
+ 3. **Update application.properties with MySQL credentials.**
+ 4. **Run the Spring Boot application:**
+    ```sh
+    mvn clean install
+    mvn spring-boot:run
 
--> Frontend (React)
-    1. Navigate to the React project directory:
-        cd emp-project-view
-    2. Install dependencies:
-        npm install
-    3. Start the React application:
-        npm start
+ ### Frontend (React)
+   1. **Navigate to the React project directory:**
+      ```sh
+         cd emp-project-view
+   2. **Install dependencies:**
+      ```sh
+         npm install
+   3. **Start the React application:**
+      ```sh
+      npm start
 
 # Postman API Collection
 - Import the postman_collection.json file into Postman.
