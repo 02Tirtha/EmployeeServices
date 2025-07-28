@@ -57,6 +57,15 @@ Employee Services is a Java Full-Stack Project built using Spring Boot, MySQL, R
 - PUT /employees/{id} – Update employee details.
 - DELETE /employees/{id} – Remove an employee.
 
+#  Screenshots
+
+| Page             | Screenshot                               |
+|------------------|-------------------------------------------|
+| Home Page        | ![Emp_Home](Screenshots/Emp_Home.png)     |
+| Add Employee     | ![AddEmp](Screenshots/AddEmp.png)         |
+| Employee List    | ![EmpList](Screenshots/EmpList.png)       |
+| Update Employee  | ![UpdateEmp](Screenshots/UpdateEmp.png)   |
+
 # Future Improvements 
 - Add JWT-based authentication for secure access.
 - Improve UI with a dashboard and employee analytics.
